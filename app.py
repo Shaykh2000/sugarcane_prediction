@@ -59,4 +59,4 @@ def predict():
     return render_template('index.html', prediction=pred_class, confidence=f"{confidence:.2f}")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
